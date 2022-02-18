@@ -14,10 +14,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/login');
     });
   }
-  
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Container(
               height: 70.0,
               width: 70.0,
-              margin:const EdgeInsets.symmetric(vertical: 10.0),
+              margin: const EdgeInsets.symmetric(vertical: 10.0),
               child: SvgPicture.asset('assets/images/Vector.svg'),
             ),
             Container(

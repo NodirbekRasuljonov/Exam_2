@@ -111,19 +111,112 @@ class _LogInPageState extends State<LogInPage> {
           Positioned(
             top: 404.0,
             left: 20.0,
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                height: 50.0,
+                width: 150.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                      height: 22.0,
+                      width: 22.0,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('assets/images/facebook.png'))),
+                    ),
+                    Container(
+                      height: 22.0,
+                      width: 70.0,
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Facebook',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.w400),
+                      ),
+                    )
+                  ],
+                ),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(RadiusConst.small),
+                    color: ColorConst.loginpagebuttoncolor),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 404.0,
+            right: 20.0,
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                height: 50.0,
+                width: 150.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 5.0),
+                      height: 22.0,
+                      width: 22.0,
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage('assets/images/google.png'))),
+                    ),
+                    Container(
+                      height: 22.0,
+                      width: 70.0,
+                      alignment: Alignment.center,
+                      child: const Text(
+                        'Google',
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.w400),
+                      ),
+                    )
+                  ],
+                ),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(RadiusConst.small),
+                    color: ColorConst.loginpagebuttoncolor),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 111.0,
+            bottom: 150.0,
+            right: 110.0,
+              child: InkWell(
+                onTap: (){},
             child: Container(
               height: 50.0,
               width: 150.0,
-              child: Row(
-                children: [
-                  SvgPicture.asset('assets/images/facebook.png')
-                  ],
-              ),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(RadiusConst.small),
-                  color: ColorConst.loginpagebuttoncolor),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(RadiusConst.extrasmall),color: ColorConst.kprimary),
+              child: Text("Ro'yxatdan o'tish",style: TextStyle(color: ColorConst.textcolor,fontSize: FontConst.medium),),
             ),
-          )
+          )),
+          Positioned(
+            bottom: 73.0,
+            left: 111.0,
+            right: 110.0,
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                height: 53.0,
+                width: 139.0,
+                alignment: Alignment.center,
+                child: Text("Kirish",style: TextStyle(color: ColorConst.textcolor,fontSize: FontConst.medium),),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(RadiusConst.extrasmall),
+                    color: ColorConst.kprimary.withOpacity(0.5)),
+              ),
+            ),
+          ),
         ],
       ),
     ));

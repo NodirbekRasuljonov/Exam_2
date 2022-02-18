@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Smart Farm',
       theme: ThemeData.light(),
       onGenerateRoute: MyRoutes().onGenerateRoute,
-      initialRoute: '/login',
+      initialRoute: '/',
     );
   }
 }
