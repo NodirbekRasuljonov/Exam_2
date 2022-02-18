@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:badges/badges.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:examtwo/core/components/bottombar.dart';
 import 'package:examtwo/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -268,7 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SliverToBoxAdapter(
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height,
+                    height: MediaQuery.of(context).size.height * 0.85,
                     width: double.infinity,
                     child: Stack(children: [
                       Positioned(
@@ -421,33 +423,390 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontSize: FontConst.large,
                                   )))),
                       Positioned(
-                        left: 15.0,
-                        right: 15.0,
-                        top: 330.0,
+                          left: 15.0,
+                          right: 15.0,
+                          top: 330.0,
                           child: Container(
-                        height: 150.0,
-                        width: 330.0,
-                        decoration: BoxDecoration(
-                          image: const DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage('D:\flutter_exam_2\\examtwo\\assets\\pngs\\farm1.png')),
-                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)
-                        ),
-                      ))
+                              height: 150.0,
+                              width: 330.0,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      top: 10.0,
+                                      left: 10.0,
+                                      bottom: 115.0,
+                                      right: 298.0,
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          '172',
+                                          style: TextStyle(
+                                              color: ColorConst.textcolor),
+                                        ),
+                                        height: 21.0,
+                                        width: 42.0,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(58.0),
+                                            color: Color(0xff55B963)),
+                                      )),
+                                  Positioned(
+                                      bottom: 30.0,
+                                      left: 10.0,
+                                      child: Text(
+                                        'Ina Ferma',
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.medium),
+                                      )),
+                                  Positioned(
+                                      left: 10.0,
+                                      bottom: 13.0,
+                                      child: Text(
+                                        "Eng yaxshi fermer xo'jaliklaridan",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.small),
+                                      )),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 120.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Sigir',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 65.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Ot',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                          Positioned(
+                                        bottom: 13.0,
+                                        right: 5.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('+12',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+
+                                ],
+                              ),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(
+                                      RadiusConst.extrasmall),
+                                  image: const DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: CachedNetworkImageProvider(
+                                          'https://get.pxhere.com/photo/landscape-nature-grass-field-farm-meadow-prairie-countryside-flower-animal-land-rural-cattle-herd-farming-pasture-grazing-livestock-agriculture-beef-plain-farmland-graze-cows-clouds-grassland-stormy-houses-habitat-ecosystem-dairy-rural-area-natural-environment-cattle-like-mammal-stormy-clouds-1057530.jpg'))))),
+                      Positioned(
+                          left: 15.0,
+                          right: 15.0,
+                          top: 500.0,
+                          child: Container(
+                              height: 150.0,
+                              width: 330.0,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      top: 10.0,
+                                      left: 10.0,
+                                      bottom: 115.0,
+                                      right: 298.0,
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          '160',
+                                          style: TextStyle(
+                                              color: ColorConst.textcolor),
+                                        ),
+                                        height: 21.0,
+                                        width: 42.0,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(58.0),
+                                            color: Color(0xff55B963)),
+                                      )),
+                                  Positioned(
+                                      bottom: 30.0,
+                                      left: 10.0,
+                                      child: Text(
+                                        "Marvarid In'omi",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.medium),
+                                      )),
+                                  Positioned(
+                                      left: 10.0,
+                                      bottom: 13.0,
+                                      child: Text(
+                                        "Eng yaxshi fermer xo'jaliklaridan",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.small),
+                                      )),
+                                      
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 65.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Ot',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                          Positioned(
+                                        bottom: 13.0,
+                                        right: 5.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('+7',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+
+                                ],
+                              ),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(
+                                      RadiusConst.extrasmall),
+                                  image: const DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: CachedNetworkImageProvider(
+                                          'https://cdn.pixabay.com/photo/2015/03/24/18/45/barn-688000_1280.jpg'))))),
                     ]),
+                  ),
+                ),
+                SliverToBoxAdapter(
+                  child: Container(
+                    height: MediaQuery.of(context).size.height*0.5,
+                    width: double.infinity,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                            left: 15.0,
+                            right: 15.0,
+                            top: 10.0,
+                            child: Container(
+                                height: 150.0,
+                                width: 330.0,
+                                child: Stack(
+                                children: [
+                                  Positioned(
+                                      top: 10.0,
+                                      left: 10.0,
+                                      bottom: 115.0,
+                                      right: 298.0,
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          '150',
+                                          style: TextStyle(
+                                              color: ColorConst.textcolor),
+                                        ),
+                                        height: 21.0,
+                                        width: 42.0,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(58.0),
+                                            color: Color(0xff55B963)),
+                                      )),
+                                  Positioned(
+                                      bottom: 30.0,
+                                      left: 10.0,
+                                      child: Text(
+                                        "Yashna Tabiat",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.medium),
+                                      )),
+                                  Positioned(
+                                      left: 10.0,
+                                      bottom: 13.0,
+                                      child: Text(
+                                        "Eng yaxshi fermer xo'jaliklaridan",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.small),
+                                      )),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 120.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Sigir',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 65.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text("Qo'y",style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                          Positioned(
+                                        bottom: 13.0,
+                                        right: 5.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('+15',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+
+                                ],
+                              ),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(
+                                        RadiusConst.extrasmall),
+                                    image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: CachedNetworkImageProvider(
+                                            'http://admcherjar.ru/swp/wp-content/uploads/2020/10/farm-animals.jpg'))))),
+                        Positioned(
+                            left: 15.0,
+                            right: 15.0,
+                            top: 180.0,
+                            child: Container(
+                                height: 150.0,
+                                width: 330.0,
+                                child: Stack(
+                                children: [
+                                  Positioned(
+                                      top: 10.0,
+                                      left: 10.0,
+                                      bottom: 115.0,
+                                      right: 298.0,
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        child: Text(
+                                          '145',
+                                          style: TextStyle(
+                                              color: ColorConst.textcolor),
+                                        ),
+                                        height: 21.0,
+                                        width: 42.0,
+                                        decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(58.0),
+                                            color: Color(0xff55B963)),
+                                      )),
+                                  Positioned(
+                                      bottom: 30.0,
+                                      left: 10.0,
+                                      child: Text(
+                                        "Obod Zamin",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.medium),
+                                      )),
+                                  Positioned(
+                                      left: 10.0,
+                                      bottom: 13.0,
+                                      child: Text(
+                                        "Eng yaxshi fermer xo'jaliklaridan",
+                                        style: TextStyle(
+                                            color: ColorConst.textcolor,
+                                            fontSize: FontConst.small),
+                                      )),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 120.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Tovuq',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                      Positioned(
+                                        bottom: 13.0,
+                                        right: 65.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('Ot',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+                                          Positioned(
+                                        bottom: 13.0,
+                                        right: 5.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          child: Text('+5',style: TextStyle(color: ColorConst.textcolor),),
+                                          height: 34.0,width: 50.0,decoration: BoxDecoration(
+                                          color: ColorConst.kprimary,
+                                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)),)),
+
+                                ],
+                              ),
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(
+                                        RadiusConst.extrasmall),
+                                    image: const DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: CachedNetworkImageProvider(
+                                            'https://cdn.pixabay.com/photo/2015/03/24/18/45/barn-688000_1280.jpg'))))),
+                      ],
+                    ),
                   ),
                 )
               ],
             ),
           ),
-          // Expanded(
-          //     flex: 1,
-          //     child: Container(
-          //       height: 56.0,
-          //       color: Colors.amberAccent,
-          //     ))
+          Expanded(
+              flex: 1,
+              child: Container(
+                height: 56.0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    InkWell(
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 70.0,
+                        width: 70.0,
+                        child: BottomBar.bottombar('assets/images/home.svg')),
+                    ),
+                    InkWell(
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 70.0,
+                        width: 70.0,
+                        child:BottomBar.bottombar('assets/images/search.svg')
+                      ),
+                    ),
+                    InkWell(
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 70.0,
+                        width: 70.0,
+                        child: BottomBar.bottombar('assets/images/calendar'),
+                        ),
+                    ),
+                    InkWell(
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 70.0,
+                        width: 70.0,
+                        child: BottomBar.bottombar('assets/images/setting.svg'))
+                    ),
+                    
+                  
+                  ],
+                ),
+              ))
         ],
       ),
     );
   }
+
 }
