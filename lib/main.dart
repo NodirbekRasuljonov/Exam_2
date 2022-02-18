@@ -15,9 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Smart Farm',
       theme: ThemeData.light(),
-      // onGenerateRoute: MyRoutes().onGenerateRoute,
-      // initialRoute: '/register',
-      home:const RegisterPage(),
+      onGenerateRoute: MyRoutes().onGenerateRoute,
+      initialRoute: '/',
     );
   }
 }
