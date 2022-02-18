@@ -127,7 +127,7 @@ class _LogInPageState extends State<LogInPage> {
                       decoration: const BoxDecoration(
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage('assets/images/facebook.png'))),
+                              image: AssetImage('assets/images/pngs/facebook.png'))),
                     ),
                     Container(
                       height: 22.0,
@@ -166,7 +166,7 @@ class _LogInPageState extends State<LogInPage> {
                       decoration: const BoxDecoration(
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage('assets/images/google.png'))),
+                              image: AssetImage('assets/images/pngs/google.png'))),
                     ),
                     Container(
                       height: 22.0,
