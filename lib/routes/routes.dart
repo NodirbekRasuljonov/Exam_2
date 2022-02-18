@@ -1,3 +1,4 @@
+import 'package:examtwo/screens/login.dart';
 import 'package:examtwo/screens/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +8,8 @@ class MyRoutes {
     switch (s.name) {
       case '/':
         return MaterialPageRoute(builder: (context) =>const SplashScreen());
-
+        case '/login':
+        return MaterialPageRoute(builder: (context) =>const LogInPage());
     }
   }
 }

@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:examtwo/core/components/sizeconfig.dart';
 import 'package:examtwo/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -16,7 +14,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {});
+    Timer(Duration(seconds: 3), () {
+    });
   }
   
 
