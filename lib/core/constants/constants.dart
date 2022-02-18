@@ -6,6 +6,7 @@ class ColorConst {
   static Color borderColor = Color(0xff999999);
   static Color loginpagebuttoncolor = Color(0xffcfe8f8);
   static Color registerpageprefixtetxcolor = Color(0xffEFEFEF);
+  static Color mainpagebordercolor = Color(0xffDDDDDD);
 }
 
 class FontConst {
