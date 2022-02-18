@@ -267,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 SliverToBoxAdapter(
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height,
                     width: double.infinity,
                     child: Stack(children: [
@@ -360,56 +360,80 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       Positioned(
+                        left: 15.0,
+                        right: 15.0,
+                        top: 170.0,
+                        child: Container(
+                          height: 100.0,
+                          width: 100.0,
+                          child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                Container(
+                                  height: 100.0,
+                                  width: 140.0,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                          RadiusConst.extrasmall),
+                                      image: const DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: AssetImage(
+                                              'assets/pngs/tuxum.png'))),
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10.0),
+                                ),
+                                Container(
+                                  height: 100.0,
+                                  width: 140.0,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                          RadiusConst.extrasmall),
+                                      image: const DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: AssetImage(
+                                              'assets/pngs/gosht.png'))),
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10.0),
+                                ),
+                                Container(
+                                  height: 100.0,
+                                  width: 140.0,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                          RadiusConst.extrasmall),
+                                      image: const DecorationImage(
+                                          fit: BoxFit.cover,
+                                          image: AssetImage(
+                                              'assets/pngs/sut.png'))),
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10.0),
+                                ),
+                              ]),
+                        ),
+                      ),
+                      Positioned(
                           left: 15.0,
-                          right: 15.0,
-                          top: 170.0,
+                          top: 290.0,
+                          child: InkWell(
+                              child: Text('Fermalar',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: FontConst.large,
+                                  )))),
+                      Positioned(
+                        left: 15.0,
+                        right: 15.0,
+                        top: 330.0,
                           child: Container(
-                            height: 100.0,
-                            width: 100.0,
-                            child: ListView(
-                                scrollDirection: Axis.horizontal,
-                                children: [
-                                  Container(
-                                    height: 100.0,
-                                    width: 140.0,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(
-                                            RadiusConst.extrasmall),
-                                        image: const DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: AssetImage(
-                                                'assets/pngs/tuxum.png'))),
-                                    margin: const EdgeInsets.symmetric(
-                                        horizontal: 10.0),
-                                  ),
-                                  Container(
-                                    height: 100.0,
-                                    width: 140.0,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(
-                                            RadiusConst.extrasmall),
-                                        image: const DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: AssetImage(
-                                                'assets/pngs/gosht.png'))),
-                                    margin: const EdgeInsets.symmetric(
-                                        horizontal: 10.0),
-                                  ),
-                                  Container(
-                                    height: 100.0,
-                                    width: 140.0,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(
-                                            RadiusConst.extrasmall),
-                                        image: const DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: AssetImage(
-                                                'assets/pngs/sut.png'))),
-                                    margin: const EdgeInsets.symmetric(
-                                        horizontal: 10.0),
-                                  ),
-                                ]),
-                          ))
+                        height: 150.0,
+                        width: 330.0,
+                        decoration: BoxDecoration(
+                          image: const DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage('D:\flutter_exam_2\\examtwo\\assets\\pngs\\farm1.png')),
+                          borderRadius: BorderRadius.circular(RadiusConst.extrasmall)
+                        ),
+                      ))
                     ]),
                   ),
                 )
