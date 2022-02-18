@@ -1,3 +1,4 @@
+import 'package:examtwo/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Smart Farm',
       theme: ThemeData.light(),
-      
+      onGenerateRoute: MyRoutes().onGenerateRoute,
+      initialRoute: '/',
     );
   }
 }
