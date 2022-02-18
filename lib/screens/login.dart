@@ -13,6 +13,8 @@ class LogInPage extends StatefulWidget {
 class _LogInPageState extends State<LogInPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final _key = GlobalKey<FormState>();
+  final _emailkey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,6 +41,7 @@ class _LogInPageState extends State<LogInPage> {
                 width: 320.0,
                 child: TextFormField(
                   controller: _emailController,
+                  key: _key,
                   decoration: InputDecoration(
                       hintText: 'Email',
                       hintStyle: TextStyle(color: ColorConst.borderColor),
@@ -50,6 +53,11 @@ class _LogInPageState extends State<LogInPage> {
                           borderSide: BorderSide(color: ColorConst.borderColor),
                           borderRadius:
                               BorderRadius.circular(RadiusConst.extrasmall))),
+                  validator: (text) {
+                    if (_emailController.text == 'nodirbek@gmail.com') {
+                      Navigator.pushNamed(context, '/home');
+                    }
+                  },
                 ),
               )),
           Positioned(
@@ -61,6 +69,7 @@ class _LogInPageState extends State<LogInPage> {
               height: 55.0,
               width: 320.0,
               child: TextFormField(
+                key: _emailkey,
                 controller: _passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
@@ -149,7 +158,9 @@ class _LogInPageState extends State<LogInPage> {
             left: 111.0,
             right: 110.0,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                
+              },
               child: Container(
                 height: 53.0,
                 width: 139.0,

@@ -769,38 +769,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    InkWell(
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 70.0,
-                        width: 70.0,
-                        child: BottomBar.bottombar('assets/images/home.svg')),
-                    ),
-                    InkWell(
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 70.0,
-                        width: 70.0,
-                        child:BottomBar.bottombar('assets/images/search.svg')
-                      ),
-                    ),
-                    InkWell(
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 70.0,
-                        width: 70.0,
-                        child: BottomBar.bottombar('assets/images/calendar'),
-                        ),
-                    ),
-                    InkWell(
-                      child: Container(
-                        alignment: Alignment.center,
-                        height: 70.0,
-                        width: 70.0,
-                        child: BottomBar.bottombar('assets/images/setting.svg'))
-                    ),
-                    
-                  
+                    MyBottomBar(svgpath: 'assets/images/home.svg', index: 1),
+                    MyBottomBar(svgpath: 'assets/images/search.svg', index: 1),
+                    MyBottomBar(svgpath: 'assets/images/calendar.svg', index: 1),
+                    MyBottomBar(svgpath: 'assets/images/settings.svg', index: 1),
                   ],
                 ),
               ))

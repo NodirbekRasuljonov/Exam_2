@@ -1,3 +1,4 @@
+import 'package:examtwo/screens/homepage.dart';
 import 'package:examtwo/screens/login.dart';
 import 'package:examtwo/screens/register.dart';
 import 'package:examtwo/screens/splash.dart';
@@ -13,6 +14,8 @@ class MyRoutes {
         return MaterialPageRoute(builder: (context) =>const LogInPage());
         case '/register':
         return MaterialPageRoute(builder: (context) => RegisterPage());
+        case '/home':
+        return MaterialPageRoute(builder: (context) =>const MyHomePage());
     }
   }
 }

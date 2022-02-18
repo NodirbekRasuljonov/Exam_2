@@ -94,7 +94,7 @@ class RegisterPage extends StatelessWidget {
                     controller: _phonenumberController,
                     decoration: InputDecoration(
                         prefix: Container(
-                            margin:const EdgeInsets.only(right: 20.0),
+                            margin: const EdgeInsets.only(right: 20.0),
                             height: 39.0,
                             width: 60.0,
                             alignment: Alignment.center,
@@ -104,7 +104,9 @@ class RegisterPage extends StatelessWidget {
                                 color: ColorConst.registerpageprefixtetxcolor),
                             child: Text(
                               '+998',
-                              style: TextStyle(color: Colors.black,fontSize: FontConst.medium),
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: FontConst.medium),
                             )),
                         enabledBorder: OutlineInputBorder(
                             borderRadius:
@@ -170,20 +172,26 @@ class RegisterPage extends StatelessWidget {
                   bottom: 65.0,
                   left: 70.0,
                   right: 70.0,
-                  child: Container(
-                    alignment: Alignment.center,
-                    height: 52.0,
-                    width: 256.0,
-                    child: Text(
-                      "Ro'yxatdan o'tish",
-                      style: TextStyle(
-                          color: ColorConst.textcolor,
-                          fontSize: FontConst.medium,
-                          fontWeight: FontWeight.w700),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/home');
+                    },
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 52.0,
+                      width: 256.0,
+                      child: Text(
+                        "Ro'yxatdan o'tish",
+                        style: TextStyle(
+                            color: ColorConst.textcolor,
+                            fontSize: FontConst.medium,
+                            fontWeight: FontWeight.w700),
+                      ),
+                      decoration: BoxDecoration(
+                          borderRadius:
+                              BorderRadius.circular(RadiusConst.medium),
+                          color: ColorConst.kprimary),
                     ),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(RadiusConst.medium),
-                        color: ColorConst.kprimary),
                   ))
             ],
           ),
