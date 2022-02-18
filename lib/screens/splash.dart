@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:examtwo/core/components/sizeconfig.dart';
 import 'package:examtwo/core/constants/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -31,6 +32,12 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              height: 70.0,
+              width: 70.0,
+              margin:const EdgeInsets.symmetric(vertical: 10.0),
+              child: SvgPicture.asset('assets/images/Vector.svg'),
+            ),
             Container(
               alignment: Alignment.center,
               height: 25,
