@@ -1,4 +1,6 @@
-import 'package:examtwo/routes/routes.dart';
+import 'package:examtwo/model/farminfomodel.dart';
+// import 'package:examtwo/routes/routes.dart';
+import 'package:examtwo/screens/farminfo.dart';
 import 'package:examtwo/screens/homepage.dart';
 import 'package:examtwo/screens/register.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Smart Farm',
       theme: ThemeData.light(),
-      onGenerateRoute: MyRoutes().onGenerateRoute,
-      initialRoute: '/',
+      // onGenerateRoute: MyRoutes().onGenerateRoute,
+      // initialRoute: '/',
+      home:const FarmIfoPage(),
     );
   }
 }

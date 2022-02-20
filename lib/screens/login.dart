@@ -53,11 +53,7 @@ class _LogInPageState extends State<LogInPage> {
                           borderSide: BorderSide(color: ColorConst.borderColor),
                           borderRadius:
                               BorderRadius.circular(RadiusConst.extrasmall))),
-                  validator: (text) {
-                    if (_emailController.text == 'nodirbek@gmail.com') {
-                      Navigator.pushNamed(context, '/home');
-                    }
-                  },
+                  
                 ),
               )),
           Positioned(
@@ -159,7 +155,7 @@ class _LogInPageState extends State<LogInPage> {
             right: 110.0,
             child: InkWell(
               onTap: () {
-                
+                Navigator.pushNamed(context, '/home');
               },
               child: Container(
                 height: 53.0,

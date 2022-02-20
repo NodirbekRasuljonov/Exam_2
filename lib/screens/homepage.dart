@@ -1,6 +1,4 @@
-import 'dart:ui';
 
-import 'package:badges/badges.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:examtwo/core/components/bottombar.dart';
 import 'package:examtwo/core/constants/constants.dart';
@@ -68,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         Positioned(
                           top: 43.0,
-                          left: 205.0,
+                          left: 180.0,
                           child: Container(
                             alignment: Alignment.center,
                             height: 43.0,
@@ -211,7 +209,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             )),
                         Positioned(
                             left: 15.0,
-                            right: 277.0,
+                            right: 250.0,
                             top: 530.0,
                             child: Text(
                               'Fermalar',
@@ -270,7 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SliverToBoxAdapter(
                   child: SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.85,
+                    height: MediaQuery.of(context).size.height * 0.9,
                     width: double.infinity,
                     child: Stack(children: [
                       Positioned(
@@ -435,7 +433,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       top: 10.0,
                                       left: 10.0,
                                       bottom: 115.0,
-                                      right: 298.0,
+                                      right: 285.0,
                                       child: Container(
                                         alignment: Alignment.center,
                                         child: Text(
@@ -504,7 +502,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   image: const DecorationImage(
                                       fit: BoxFit.cover,
                                       image: CachedNetworkImageProvider(
-                                          'https://get.pxhere.com/photo/landscape-nature-grass-field-farm-meadow-prairie-countryside-flower-animal-land-rural-cattle-herd-farming-pasture-grazing-livestock-agriculture-beef-plain-farmland-graze-cows-clouds-grassland-stormy-houses-habitat-ecosystem-dairy-rural-area-natural-environment-cattle-like-mammal-stormy-clouds-1057530.jpg'))))),
+                                          'https://get.pxhere.com/photo/landscape-nature-grass-field-farm-meadow-prairie-countryside-flower-animal-land-rural-cattle-herd-farming-pasture-grazing-livestock-agriculture-beef-plain-farmland-graze-cows-clouds-grassland-stormy-houses-habitat-ecosystem-dairy-rural-area-natural-environment-cattle-like-mammal-stormy-clouds-1057530.jpg'
+                                          ))))),
                       Positioned(
                           left: 15.0,
                           right: 15.0,
@@ -518,7 +517,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       top: 10.0,
                                       left: 10.0,
                                       bottom: 115.0,
-                                      right: 298.0,
+                                      right: 285.0,
                                       child: Container(
                                         alignment: Alignment.center,
                                         child: Text(
@@ -602,7 +601,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       top: 10.0,
                                       left: 10.0,
                                       bottom: 115.0,
-                                      right: 298.0,
+                                      right: 285.0,
                                       child: Container(
                                         alignment: Alignment.center,
                                         child: Text(
@@ -685,7 +684,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       top: 10.0,
                                       left: 10.0,
                                       bottom: 115.0,
-                                      right: 298.0,
+                                      right: 285.0,
                                       child: Container(
                                         alignment: Alignment.center,
                                         child: Text(
