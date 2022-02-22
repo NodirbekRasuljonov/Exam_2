@@ -5,14 +5,14 @@ import 'package:examtwo/model/farminfomodel.dart';
 import 'package:flutter/material.dart';
 
 class FarmIfoPage extends StatefulWidget {
-  const FarmIfoPage({Key? key}) : super(key: key);
+  FarmInfo farmInfo;
+  FarmIfoPage({Key? key,required this.farmInfo}) : super(key: key);
 
   @override
   _FarmIfoPageState createState() => _FarmIfoPageState();
 }
 
 class _FarmIfoPageState extends State<FarmIfoPage> {
-  List<FarmInfo> info = FarmInfoList.infolist;
   @override
   void initState() {
     super.initState();
@@ -49,7 +49,7 @@ class _FarmIfoPageState extends State<FarmIfoPage> {
                         top: 202.0,
                         left: 15.0,
                         child: Text(
-                          info[0].fname,
+                          widget.farmInfo.fname,
                           style: TextStyle(
                               color: ColorConst.textcolor,
                               fontSize: FontConst.extralarge,
@@ -64,7 +64,7 @@ class _FarmIfoPageState extends State<FarmIfoPage> {
                           height: 50.0,
                           width: 76.0,
                           child: Text(
-                            "${info[0].rank} Xaridorlar",
+                            "${widget.farmInfo.rank} Xaridorlar",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: ColorConst.textcolor,
@@ -97,7 +97,7 @@ class _FarmIfoPageState extends State<FarmIfoPage> {
                   decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover,
-                        image: CachedNetworkImageProvider(info[0].pic)),
+                        image: CachedNetworkImageProvider(widget.farmInfo.pic)),
                   )),
             ),
           ),
@@ -157,7 +157,8 @@ class _FarmIfoPageState extends State<FarmIfoPage> {
           SliverToBoxAdapter(
             child: Container(
               width: 350.0,
-              height: 242 * (SigirList.sigirlist.length / 2).toDouble(),
+              height: 242 * (SigirList.sigirlist.length / 2).toDouble() +
+                  (SigirList.sigirlist.length / 2).toDouble() * 30,
               child: GridView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   itemCount: SigirList.sigirlist.length,
@@ -253,7 +254,8 @@ class _FarmIfoPageState extends State<FarmIfoPage> {
           SliverToBoxAdapter(
             child: Container(
               width: 350.0,
-              height: 242 * (SigirList.sigirlist.length / 2).toDouble(),
+              height: 242 * (SigirList.sigirlist.length / 2).toDouble() +
+                  (SigirList.sigirlist.length / 2).toDouble() * 30,
               child: GridView.builder(
                   physics: NeverScrollableScrollPhysics(),
                   itemCount: Tovuqlist.tovuqlist.length,
